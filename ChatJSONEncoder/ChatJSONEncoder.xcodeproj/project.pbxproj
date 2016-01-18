@@ -1,0 +1,706 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F61BB3293B5314144482DDB /* libPods-ChatJSONEncoderTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC02075983904DB2EC833A47 /* libPods-ChatJSONEncoderTests.a */; };
+		4D4CAD7A40818BC4F0BEBB2D /* libPods-ChatJSONEncoder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D84D88CCE40D525DB600308A /* libPods-ChatJSONEncoder.a */; };
+		9C60C219016A337ED7E4F969 /* libPods-ChatJSONEncoderUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 886CD3BA24E65DABD05B872D /* libPods-ChatJSONEncoderUITests.a */; };
+		FCD79C061C48E993009BB2B1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD79C051C48E993009BB2B1 /* main.m */; };
+		FCD79C091C48E993009BB2B1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD79C081C48E993009BB2B1 /* AppDelegate.m */; };
+		FCD79C121C48E993009BB2B1 /* ChatJSONEncoder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FCD79C101C48E993009BB2B1 /* ChatJSONEncoder.xcdatamodeld */; };
+		FCD79C141C48E993009BB2B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCD79C131C48E993009BB2B1 /* Assets.xcassets */; };
+		FCD79C171C48E993009BB2B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCD79C151C48E993009BB2B1 /* LaunchScreen.storyboard */; };
+		FCD79C221C48E994009BB2B1 /* ChatJSONEncoderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD79C211C48E994009BB2B1 /* ChatJSONEncoderTests.m */; };
+		FCD79C2D1C48E994009BB2B1 /* ChatJSONEncoderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD79C2C1C48E994009BB2B1 /* ChatJSONEncoderUITests.m */; };
+		FCD79C3F1C48EACB009BB2B1 /* ChatJSONEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD79C3E1C48EACB009BB2B1 /* ChatJSONEncoder.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FCD79C1E1C48E994009BB2B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCD79BF91C48E993009BB2B1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FCD79C001C48E993009BB2B1;
+			remoteInfo = ChatJSONEncoder;
+		};
+		FCD79C291C48E994009BB2B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCD79BF91C48E993009BB2B1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FCD79C001C48E993009BB2B1;
+			remoteInfo = ChatJSONEncoder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E3D60B6F055039E2A6C5A70 /* Pods-ChatJSONEncoderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatJSONEncoderTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChatJSONEncoderTests/Pods-ChatJSONEncoderTests.debug.xcconfig"; sourceTree = "<group>"; };
+		27F6C6165F71E422F1BED499 /* Pods-ChatJSONEncoderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatJSONEncoderTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChatJSONEncoderTests/Pods-ChatJSONEncoderTests.release.xcconfig"; sourceTree = "<group>"; };
+		47DE69C0927BAFAD3FCCDA98 /* Pods-ChatJSONEncoder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatJSONEncoder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChatJSONEncoder/Pods-ChatJSONEncoder.debug.xcconfig"; sourceTree = "<group>"; };
+		58B3A6F3877EB9B8B598915C /* Pods-ChatJSONEncoderUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatJSONEncoderUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChatJSONEncoderUITests/Pods-ChatJSONEncoderUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5BA598AA233D892DE556D2CF /* Pods-ChatJSONEncoder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatJSONEncoder.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChatJSONEncoder/Pods-ChatJSONEncoder.release.xcconfig"; sourceTree = "<group>"; };
+		886CD3BA24E65DABD05B872D /* libPods-ChatJSONEncoderUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ChatJSONEncoderUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC02075983904DB2EC833A47 /* libPods-ChatJSONEncoderTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ChatJSONEncoderTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D84D88CCE40D525DB600308A /* libPods-ChatJSONEncoder.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ChatJSONEncoder.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3A9CF64922688555B3A2193 /* Pods-ChatJSONEncoderUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatJSONEncoderUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChatJSONEncoderUITests/Pods-ChatJSONEncoderUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FCD79C011C48E993009BB2B1 /* ChatJSONEncoder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatJSONEncoder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCD79C051C48E993009BB2B1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FCD79C071C48E993009BB2B1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FCD79C081C48E993009BB2B1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FCD79C111C48E993009BB2B1 /* ChatJSONEncoder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ChatJSONEncoder.xcdatamodel; sourceTree = "<group>"; };
+		FCD79C131C48E993009BB2B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FCD79C161C48E993009BB2B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FCD79C181C48E993009BB2B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCD79C1D1C48E994009BB2B1 /* ChatJSONEncoderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatJSONEncoderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCD79C211C48E994009BB2B1 /* ChatJSONEncoderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatJSONEncoderTests.m; sourceTree = "<group>"; };
+		FCD79C231C48E994009BB2B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCD79C281C48E994009BB2B1 /* ChatJSONEncoderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatJSONEncoderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCD79C2C1C48E994009BB2B1 /* ChatJSONEncoderUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatJSONEncoderUITests.m; sourceTree = "<group>"; };
+		FCD79C2E1C48E994009BB2B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCD79C3D1C48EACB009BB2B1 /* ChatJSONEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatJSONEncoder.h; sourceTree = "<group>"; };
+		FCD79C3E1C48EACB009BB2B1 /* ChatJSONEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatJSONEncoder.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FCD79BFE1C48E993009BB2B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D4CAD7A40818BC4F0BEBB2D /* libPods-ChatJSONEncoder.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCD79C1A1C48E994009BB2B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F61BB3293B5314144482DDB /* libPods-ChatJSONEncoderTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCD79C251C48E994009BB2B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C60C219016A337ED7E4F969 /* libPods-ChatJSONEncoderUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		15C649B71E4E66971A0DE865 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D84D88CCE40D525DB600308A /* libPods-ChatJSONEncoder.a */,
+				BC02075983904DB2EC833A47 /* libPods-ChatJSONEncoderTests.a */,
+				886CD3BA24E65DABD05B872D /* libPods-ChatJSONEncoderUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8E7F4172ADC0280879677309 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				47DE69C0927BAFAD3FCCDA98 /* Pods-ChatJSONEncoder.debug.xcconfig */,
+				5BA598AA233D892DE556D2CF /* Pods-ChatJSONEncoder.release.xcconfig */,
+				0E3D60B6F055039E2A6C5A70 /* Pods-ChatJSONEncoderTests.debug.xcconfig */,
+				27F6C6165F71E422F1BED499 /* Pods-ChatJSONEncoderTests.release.xcconfig */,
+				F3A9CF64922688555B3A2193 /* Pods-ChatJSONEncoderUITests.debug.xcconfig */,
+				58B3A6F3877EB9B8B598915C /* Pods-ChatJSONEncoderUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FCD79BF81C48E992009BB2B1 = {
+			isa = PBXGroup;
+			children = (
+				FCD79C031C48E993009BB2B1 /* ChatJSONEncoder */,
+				FCD79C201C48E994009BB2B1 /* ChatJSONEncoderTests */,
+				FCD79C2B1C48E994009BB2B1 /* ChatJSONEncoderUITests */,
+				FCD79C021C48E993009BB2B1 /* Products */,
+				8E7F4172ADC0280879677309 /* Pods */,
+				15C649B71E4E66971A0DE865 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FCD79C021C48E993009BB2B1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FCD79C011C48E993009BB2B1 /* ChatJSONEncoder.app */,
+				FCD79C1D1C48E994009BB2B1 /* ChatJSONEncoderTests.xctest */,
+				FCD79C281C48E994009BB2B1 /* ChatJSONEncoderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FCD79C031C48E993009BB2B1 /* ChatJSONEncoder */ = {
+			isa = PBXGroup;
+			children = (
+				FCD79C071C48E993009BB2B1 /* AppDelegate.h */,
+				FCD79C081C48E993009BB2B1 /* AppDelegate.m */,
+				FCD79C131C48E993009BB2B1 /* Assets.xcassets */,
+				FCD79C151C48E993009BB2B1 /* LaunchScreen.storyboard */,
+				FCD79C181C48E993009BB2B1 /* Info.plist */,
+				FCD79C101C48E993009BB2B1 /* ChatJSONEncoder.xcdatamodeld */,
+				FCD79C041C48E993009BB2B1 /* Supporting Files */,
+				FCD79C3D1C48EACB009BB2B1 /* ChatJSONEncoder.h */,
+				FCD79C3E1C48EACB009BB2B1 /* ChatJSONEncoder.m */,
+			);
+			path = ChatJSONEncoder;
+			sourceTree = "<group>";
+		};
+		FCD79C041C48E993009BB2B1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FCD79C051C48E993009BB2B1 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FCD79C201C48E994009BB2B1 /* ChatJSONEncoderTests */ = {
+			isa = PBXGroup;
+			children = (
+				FCD79C211C48E994009BB2B1 /* ChatJSONEncoderTests.m */,
+				FCD79C231C48E994009BB2B1 /* Info.plist */,
+			);
+			path = ChatJSONEncoderTests;
+			sourceTree = "<group>";
+		};
+		FCD79C2B1C48E994009BB2B1 /* ChatJSONEncoderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FCD79C2C1C48E994009BB2B1 /* ChatJSONEncoderUITests.m */,
+				FCD79C2E1C48E994009BB2B1 /* Info.plist */,
+			);
+			path = ChatJSONEncoderUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FCD79C001C48E993009BB2B1 /* ChatJSONEncoder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCD79C311C48E994009BB2B1 /* Build configuration list for PBXNativeTarget "ChatJSONEncoder" */;
+			buildPhases = (
+				E84432E2DCB4424586C3A9D0 /* Check Pods Manifest.lock */,
+				FCD79BFD1C48E993009BB2B1 /* Sources */,
+				FCD79BFE1C48E993009BB2B1 /* Frameworks */,
+				FCD79BFF1C48E993009BB2B1 /* Resources */,
+				89F0162C78594DF99C1E029F /* Embed Pods Frameworks */,
+				DFBABD808B7CE80C6943094D /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChatJSONEncoder;
+			productName = ChatJSONEncoder;
+			productReference = FCD79C011C48E993009BB2B1 /* ChatJSONEncoder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FCD79C1C1C48E994009BB2B1 /* ChatJSONEncoderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCD79C341C48E994009BB2B1 /* Build configuration list for PBXNativeTarget "ChatJSONEncoderTests" */;
+			buildPhases = (
+				37B2517F9171B237CF648585 /* Check Pods Manifest.lock */,
+				FCD79C191C48E994009BB2B1 /* Sources */,
+				FCD79C1A1C48E994009BB2B1 /* Frameworks */,
+				FCD79C1B1C48E994009BB2B1 /* Resources */,
+				FDCADFF07344AE33DEF6565A /* Embed Pods Frameworks */,
+				A5846AFBC4D0546BBB2A0F79 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FCD79C1F1C48E994009BB2B1 /* PBXTargetDependency */,
+			);
+			name = ChatJSONEncoderTests;
+			productName = ChatJSONEncoderTests;
+			productReference = FCD79C1D1C48E994009BB2B1 /* ChatJSONEncoderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FCD79C271C48E994009BB2B1 /* ChatJSONEncoderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCD79C371C48E994009BB2B1 /* Build configuration list for PBXNativeTarget "ChatJSONEncoderUITests" */;
+			buildPhases = (
+				EEB9F3DE20CC7EA2FB14DD05 /* Check Pods Manifest.lock */,
+				FCD79C241C48E994009BB2B1 /* Sources */,
+				FCD79C251C48E994009BB2B1 /* Frameworks */,
+				FCD79C261C48E994009BB2B1 /* Resources */,
+				29841D092E42611B59BD2BFB /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FCD79C2A1C48E994009BB2B1 /* PBXTargetDependency */,
+			);
+			name = ChatJSONEncoderUITests;
+			productName = ChatJSONEncoderUITests;
+			productReference = FCD79C281C48E994009BB2B1 /* ChatJSONEncoderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FCD79BF91C48E993009BB2B1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Pocketry Pty Ltd";
+				TargetAttributes = {
+					FCD79C001C48E993009BB2B1 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					FCD79C1C1C48E994009BB2B1 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = FCD79C001C48E993009BB2B1;
+					};
+					FCD79C271C48E994009BB2B1 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = FCD79C001C48E993009BB2B1;
+					};
+				};
+			};
+			buildConfigurationList = FCD79BFC1C48E993009BB2B1 /* Build configuration list for PBXProject "ChatJSONEncoder" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FCD79BF81C48E992009BB2B1;
+			productRefGroup = FCD79C021C48E993009BB2B1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FCD79C001C48E993009BB2B1 /* ChatJSONEncoder */,
+				FCD79C1C1C48E994009BB2B1 /* ChatJSONEncoderTests */,
+				FCD79C271C48E994009BB2B1 /* ChatJSONEncoderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FCD79BFF1C48E993009BB2B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCD79C171C48E993009BB2B1 /* LaunchScreen.storyboard in Resources */,
+				FCD79C141C48E993009BB2B1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCD79C1B1C48E994009BB2B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCD79C261C48E994009BB2B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		29841D092E42611B59BD2BFB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChatJSONEncoderUITests/Pods-ChatJSONEncoderUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		37B2517F9171B237CF648585 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		89F0162C78594DF99C1E029F /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChatJSONEncoder/Pods-ChatJSONEncoder-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5846AFBC4D0546BBB2A0F79 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChatJSONEncoderTests/Pods-ChatJSONEncoderTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DFBABD808B7CE80C6943094D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChatJSONEncoder/Pods-ChatJSONEncoder-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E84432E2DCB4424586C3A9D0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EEB9F3DE20CC7EA2FB14DD05 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FDCADFF07344AE33DEF6565A /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChatJSONEncoderTests/Pods-ChatJSONEncoderTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FCD79BFD1C48E993009BB2B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCD79C3F1C48EACB009BB2B1 /* ChatJSONEncoder.m in Sources */,
+				FCD79C091C48E993009BB2B1 /* AppDelegate.m in Sources */,
+				FCD79C121C48E993009BB2B1 /* ChatJSONEncoder.xcdatamodeld in Sources */,
+				FCD79C061C48E993009BB2B1 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCD79C191C48E994009BB2B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCD79C221C48E994009BB2B1 /* ChatJSONEncoderTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCD79C241C48E994009BB2B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCD79C2D1C48E994009BB2B1 /* ChatJSONEncoderUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FCD79C1F1C48E994009BB2B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FCD79C001C48E993009BB2B1 /* ChatJSONEncoder */;
+			targetProxy = FCD79C1E1C48E994009BB2B1 /* PBXContainerItemProxy */;
+		};
+		FCD79C2A1C48E994009BB2B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FCD79C001C48E993009BB2B1 /* ChatJSONEncoder */;
+			targetProxy = FCD79C291C48E994009BB2B1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FCD79C151C48E993009BB2B1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCD79C161C48E993009BB2B1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FCD79C2F1C48E994009BB2B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FCD79C301C48E994009BB2B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FCD79C321C48E994009BB2B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47DE69C0927BAFAD3FCCDA98 /* Pods-ChatJSONEncoder.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ChatJSONEncoder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pocketry.ChatJSONEncoder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FCD79C331C48E994009BB2B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BA598AA233D892DE556D2CF /* Pods-ChatJSONEncoder.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ChatJSONEncoder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pocketry.ChatJSONEncoder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FCD79C351C48E994009BB2B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E3D60B6F055039E2A6C5A70 /* Pods-ChatJSONEncoderTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ChatJSONEncoderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pocketry.ChatJSONEncoderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChatJSONEncoder.app/ChatJSONEncoder";
+			};
+			name = Debug;
+		};
+		FCD79C361C48E994009BB2B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27F6C6165F71E422F1BED499 /* Pods-ChatJSONEncoderTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ChatJSONEncoderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pocketry.ChatJSONEncoderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChatJSONEncoder.app/ChatJSONEncoder";
+			};
+			name = Release;
+		};
+		FCD79C381C48E994009BB2B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3A9CF64922688555B3A2193 /* Pods-ChatJSONEncoderUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = ChatJSONEncoderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pocketry.ChatJSONEncoderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ChatJSONEncoder;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		FCD79C391C48E994009BB2B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58B3A6F3877EB9B8B598915C /* Pods-ChatJSONEncoderUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = ChatJSONEncoderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pocketry.ChatJSONEncoderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ChatJSONEncoder;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FCD79BFC1C48E993009BB2B1 /* Build configuration list for PBXProject "ChatJSONEncoder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCD79C2F1C48E994009BB2B1 /* Debug */,
+				FCD79C301C48E994009BB2B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCD79C311C48E994009BB2B1 /* Build configuration list for PBXNativeTarget "ChatJSONEncoder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCD79C321C48E994009BB2B1 /* Debug */,
+				FCD79C331C48E994009BB2B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCD79C341C48E994009BB2B1 /* Build configuration list for PBXNativeTarget "ChatJSONEncoderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCD79C351C48E994009BB2B1 /* Debug */,
+				FCD79C361C48E994009BB2B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCD79C371C48E994009BB2B1 /* Build configuration list for PBXNativeTarget "ChatJSONEncoderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCD79C381C48E994009BB2B1 /* Debug */,
+				FCD79C391C48E994009BB2B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FCD79C101C48E993009BB2B1 /* ChatJSONEncoder.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FCD79C111C48E993009BB2B1 /* ChatJSONEncoder.xcdatamodel */,
+			);
+			currentVersion = FCD79C111C48E993009BB2B1 /* ChatJSONEncoder.xcdatamodel */;
+			path = ChatJSONEncoder.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FCD79BF91C48E993009BB2B1 /* Project object */;
+}

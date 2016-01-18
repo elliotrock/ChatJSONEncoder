@@ -1,0 +1,19 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, "9.0"
+
+target 'ChatJSONEncoder' do
+pod 'AFNetworking', '~> 2.0'
+workspace 'ChatJSONEncoder'
+end
+
+target 'ChatJSONEncoderTests' do
+pod 'AFNetworking', '~> 2.0'
+workspace 'ChatJSONEncoder'
+
+end
+
+target 'ChatJSONEncoderUITests' do
+pod 'AFNetworking', '~> 2.0'
+workspace 'ChatJSONEncoder'
+
+end

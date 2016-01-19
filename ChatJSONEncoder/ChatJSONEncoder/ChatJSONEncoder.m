@@ -100,7 +100,7 @@
 	while(mentionCharRange.location!=NSNotFound )
 	{
 		// Add other character sets to test against, but this should be enought - unless odd character encodes.
-		NSMutableCharacterSet* wordBreaks = [[NSMutableCharacterSet alloc] init];
+		NSMutableCharacterSet *wordBreaks = [[NSMutableCharacterSet alloc] init];
 		[wordBreaks formUnionWithCharacterSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
 		[wordBreaks formUnionWithCharacterSet:[NSCharacterSet punctuationCharacterSet]];
 		
@@ -150,7 +150,7 @@
 		[urlMatches addObject:[chatString substringWithRange:NSMakeRange(urlRange.location, nextSpace.location)]];
 	}
 	// setup an operations queue
-	__block NSOperationQueue* operationsQueue = [[NSOperationQueue alloc] init];
+	__block NSOperationQueue *operationsQueue = [[NSOperationQueue alloc] init];
 	[operationsQueue setMaxConcurrentOperationCount:3];
 	
 	// lastOperation: used to maintain dependencies on the order, this is just to maintain
@@ -158,7 +158,7 @@
 	__block AFHTTPRequestOperation *lastOperation =nil;
 	__block NSMutableArray *links=[[NSMutableArray alloc] init];
 	
-	[urlMatches enumerateObjectsUsingBlock:^(NSString* urlString, NSUInteger index, BOOL *stop)
+	[urlMatches enumerateObjectsUsingBlock:^(NSString *urlString, NSUInteger index, BOOL *stop)
 	{
 		NSURL *URL = [NSURL URLWithString:urlString];
 		NSURLRequest *request = [NSURLRequest requestWithURL:URL];

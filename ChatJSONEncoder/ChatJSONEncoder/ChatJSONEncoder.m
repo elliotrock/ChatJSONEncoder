@@ -29,9 +29,7 @@
 	[self encodeUrlTitleJSONString:chatString onComplete:^(NSString *jsonString, NSError *error)
 	{
 		NSData *data = [jsonString dataUsingEncoding:NSUTF8StringEncoding];
-		//id jsonUrlObject = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
 		NSDictionary *urlJSONObject = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
-		
 		NSArray *jsonObjects= @[mentionsJSONObject, emoticonsJSONObject, urlJSONObject];
 		
 		_completionHandler([self returnJSONString:jsonObjects], nil);

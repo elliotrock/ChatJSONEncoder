@@ -1,5 +1,5 @@
 # ChatJSONEncoder
-ChatJSONEncoder encodes @mentions, emoticon (coffee) and it returns the url title.
+ChatJSONEncoder encodes @mentions, emoticon (coffee) and it returns the url title as a JSONString. The console shows logs of the result.  
 
 
 The project uses cocoapods to manage dependencies. To install via command line if they haven't:
